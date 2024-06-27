@@ -153,8 +153,12 @@ dialog::backdrop{
   background-color: #343434;
   border-radius: 50%;
   text-align: center;
+  cursor: pointer;
 }
 
+#settingsIcon{
+  margin-top: 7px;
+}
 .circle {
   aspect-ratio: 1;
   border-radius: 50%;
@@ -162,7 +166,6 @@ dialog::backdrop{
 
 .icon {
   width: 30px;
-  margin-top: 7.5px;
 }
 
 
