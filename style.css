@@ -36,6 +36,7 @@ dialog{
   border: 0px;
   border-radius: 15px;
   background-color: #242424;
+  color: #fff;
 }
 
 dialog::backdrop{
@@ -187,6 +188,7 @@ dialog::backdrop{
 }
 
 .selectors {
+  color: #fff;
   width: 80px;
   height: 30px;
   text-align: center;
