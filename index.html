@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/clock.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=.7" />
+    <title>Pomodoro & ToDoList</title>
+    <script type="module" src="/main.js" ></script>
+  </head>
+
+  <body id="app">
+    <header id="title">
+      <h1>
+        <img src="/public/clock.svg" alt="clock svg" id="logo">
+        Pomodoro
+      </h1>
+    </header>
+
+    <main id="timer">
+      <div class="button-group">
+        <button id="focusButton">Focus</button>
+        <button id="shortBreakButton">Short Break</button>
+        <button id="longBreakButton">Long Break</button>
+      </div>
+
+      <h1 id="time"></h1>
+      <audio id="alarm" controls>
+        <source type="audio/mp3" src="/public/alarm.mp3">
+      </audio>
+      <input type="button" id="start-stop" value="Start">
+
+      <div id="next">
+        <img src="/public/next.svg" class="icon">
+      </div>
+
+    </main>
+    
+    <h2 id="numberOfPomodoros">#1 Pomodoros</h2>
+
+    <footer>
+
+    </footer>
+
+    <div id="settings" class="circle">
+      <input id="settingsIcon" class="icon" type="image" src="/public/settings.svg" alt="settings icon" />
+    </div>
+
+    <dialog id="settingsMenu" >
+
+      <button id="scape" class="circle">X</button>
+
+      <h2>Settings</h2>
+      <div id="timeSelector">
+        <label for="Focus"> Focus: </label>
+        <label for="shortBreak"> Short Break: </label>
+        <label for="Focus"> Long Break: </label>
+
+        <input id="focusInput" type="number" name="Focus" class="selectors" min="0" value="25">
+        <input id="shortBreakInput" type="number" name="shortBreak" class="selectors" min="1" value="5">
+        <input id="longBreakInput" type="number" name="longBreak" class="selectors" min="1"  value="15">
+
+      </div>
+
+
+      <div class="item">
+        <label class="settingNoun" for="autoStart">Auto Start</label>
+        <label class="switch">
+          <input id="autoStart" type="checkbox">
+          <span class="slider"></span>
+      </label>
+      </div>
+
+      <div class="item">
+        <label class="settingNoun" for="longBreakInterval">Long Break Interval:</label>
+        <input id="longBreakIntervalInput" class="selectors" type="number" name="longBreakInterval" value="4">
+      </div>
+
+
+    </dialog>
+  </body>
+</html>
